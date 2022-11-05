@@ -1,0 +1,48 @@
+{
+  "icons": [
+    {
+      "src": "images/icons/maskable/icon_1024x1024.3e186bc7c6158bb7c2ea20441eefd3b6.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/icons/ios/icon_512x512.925d72357feced5b09161f9f7e605482.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/ios/icon_384x384.96f0bb0ffe31f054ceb05b3b14d92e82.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/ios/icon_256x256.bf535a05300d039e187ac1690ab2729f.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/ios/icon_192x192.f0e41394a55c7e970db7e5a591074265.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/ios/icon_128x128.83282eb26c577a19c677264ec7e1b6b5.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/ios/icon_96x96.48b2c7e2c10d92c3947bcf190fb38565.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "her App",
+  "short_name": "her",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./index.html",
+  "description": "her App - List Restaurant",
+  "background_color": "#ffffff",
+  "theme_color": "#f2f2f2"
+}

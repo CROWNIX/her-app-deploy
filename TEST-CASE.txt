@@ -1,0 +1,64 @@
+Integration Test:
+
+    Use Case (fungsi memfavoritkan dan batal memfavoritkan restoran):
+        1. Tampilkan halaman restaurant.
+        2. Bila restaurant ini belum difavoritkan, tampilkan widget untuk memfavoritkan restaurant. Widget ini berbentuk hati kosong.
+            Skenario Memfavoritkan Restaurant:
+                1. Restaurant belum difavoritkan.
+                2. Widget untuk memfavoritkan restaurant ditampilkan.
+                3. Widget memfavoritkan restaurant ditekan oleh pengguna.
+                4. Restaurant ditambahkan ke daftar restaurant yang difavoritkan:
+                    - Ternyata restaurant sudah difavoritkan:
+                        - Tidak perlu menyimpan kembali.
+                    - Data restaurant tidak memiliki ID:
+                        - Sistem tidak memproses penyimpanan.
+                        - SIstem tidak gagal.
+        3. Bila restaurant sudah difavoritkan, tampilkan widget berbentuk hati penuh. Pengguna dapat membatalkan kesukaannya pada restaurant ini.
+            Skenario Batal Memfavoritkan Restaurant:
+                1. Restaurant sudah difavoritkan.
+                2. Widget untuk batal memfavoritkan restaurant ditampilkan.
+                3. Widget pembatalan ditekan oleh pengguna.
+                4. Restaurant dihapus dari daftar restaurant yang difavoritkan:
+                    - Ternyata restaurant tidak ada dalam daftar restaurant yang difavoritkan.
+
+    TODO:
+        1. Memberi nama yang lebih berbeda untuk createLikeButtonTemplate dan createLikedButtonTemplate.
+        2. Alur negatif menyimpan restaurant tanpa id tidak boleh menyebabkan kegagalan.
+
+
+E2E Test:
+
+    Test Case (pengguna memfavoritkan sebuah restaurant):
+        1. Buka halaman utama.
+        2. Pilih salah satu restaurant, misalnya restaurant pertama.
+        3. Click restaurant tersebut.
+        4. Aplikasi membawa kita ke halaman detail restaurant.
+        5. Kita menekan tombol memfavoritkan restaurant, dengan widget berbentuk hati kosong.
+        6. Kita buka halaman daftar restaurant yang difavoritkan.
+        7. Kita melihat restaurant yang telah difavoritkan.
+
+    Test Case (pengguna memfavoritkan sebuah restaurant dan batal memfavoritkan restaurant tersebut):
+        1. Buka halaman utama.
+        2. Pilih salah satu restaurant, misalnya restaurant pertama.
+        3. Click restaurant tersebut.
+        4. Aplikasi membawa kita ke halaman detail restaurant.
+        5. Kita menekan tombol memfavoritkan restaurant, dengan widget berbentuk hati kosong.
+        6. Kita buka halaman daftar restaurant yang difavoritkan.
+        7. Kita melihat restaurant yang telah difavoritkan.
+        8. Pilih restaurant yang difavoritkan tersebut.
+        9. Click restaurant yang difavoritkan tersebut.
+        10. Aplikasi membawa kita ke halaman detail restaurant.
+        11. Kita menekan tombol batal memfavoritkan, dengan widget berbentuk hati penuh.
+        12. Kita buka halaman daftar favorit restaurant.
+        13. Kita melihat sudah tidak ada restaurant yang kita favoritkan.
+
+    Test Case (pengguna menambahkan review ke dalam daftar review):
+        1. Buka halaman utama.
+        2. Pilih salah satu restaurant, misalnya restaurant pertama.
+        3. Click restaurant tersebut.
+        4. Aplikasi membawa kita ke halaman detail restaurant.
+        5. Kita melihat kolom untuk mengisi review (kolom rate).
+        6. Kita isi kolom review tersebut.
+        7. Click tombol post review.
+        8. Kita accept popup
+        9. Kita melihat hasil review kita di dalam daftar review.

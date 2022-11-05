@@ -1,0 +1,166 @@
+/* heros */
+
+.heros {
+	width: 100%;
+	height: 700px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.heros-list {
+	filter: brightness(90%);
+}
+
+.heros + p {
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 32px;
+	font-weight: bold;
+	opacity: 90%;
+	text-shadow: 2px 4px 18px black;
+	position: absolute;
+	z-index: 1;
+	top: 43%;
+}
+
+/*fragment*/
+
+.fragment {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 5%;
+	margin: 5% 0;
+}
+
+.fragment a {
+	text-decoration: none;
+	text-align: center;
+	background-color: rgb(209, 233, 241);
+	padding: 10% 0;
+	margin: 3px;
+	border-radius: 10px;
+}
+
+figcaption {
+	font-size: 13px;
+	text-align: center;
+	color: rgb(7, 104, 136);
+}
+
+.icon {
+	font-size: 30px;
+	color:rgb(28, 137, 173);
+}
+
+
+/*content*/
+
+#content {
+	padding: 0 3%;
+}
+
+#content a {
+	text-decoration: none;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border-radius: 14px;
+	background-color: white;
+	color: black;
+	font-size: 14px;
+	margin: 5% 0;
+}
+
+.box__picture {
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.box__picture img {
+	border-radius: 14px 0 0 14px;
+	max-width: 87%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.box__name {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	font-size: 17px;
+	padding: 5% 0 0 0;
+}
+
+.box__description {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	font-size: 13px;
+	padding: 0 4% 0 0;
+}
+
+.box__rating {
+	max-width: 60%;
+	padding: 0 0 2% 0;
+}
+
+.box__rating p {
+	padding: 5%;
+	border-radius: 8px;
+	background-color: rgb(173, 218, 233);
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+
+.box__city {
+	max-width: 60%;
+	padding: 0 0 2% 0;
+}
+
+.box__city p {
+	padding: 5%;
+	border-radius: 8px;
+	background-color:rgb(173, 218, 233);
+	text-align: center;
+	font-family: "Quicksand", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+
+.description__listrestaurant {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	-webkit-box-orient: vertical;
+}
+
+
+/* request failed */
+
+.request__failed {
+	background-color: antiquewhite;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+.info__failed {
+	font-weight: lighter;
+	font-size: 15px;
+}
+
+.request__failed i {
+	font-size: 80px;
+	color: #1e3147;
+	margin-top: 5px;
+}

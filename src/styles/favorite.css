@@ -1,0 +1,27 @@
+.heros-favorite {
+    filter: brightness(80%);
+}
+
+
+#favoriteContent {
+	padding: 0 3%;
+}
+
+#favoriteContent a {
+	text-decoration: none;
+}
+
+.favorite__empty {
+	padding: 15px 12px;
+	background-color: antiquewhite;
+	text-align: center;
+	margin: 10px;
+	font-size: 15px;
+	font-weight: lighter;
+	border-radius: 10px;
+	color: black;
+}
+
+.favorite__empty i {
+	font-size: 50px;
+}
